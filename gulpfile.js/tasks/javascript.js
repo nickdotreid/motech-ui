@@ -33,7 +33,9 @@ gulp.task('js', function () {
 // Static: Compress JS files into motech.js
 gulp.task('js:build', function () {
     var files = lib.ext('js').files; // libraries from bower
-    return gulp.src(files.concat(paths.src))
+    files = files.concat(paths.src);
+    files = files.concat(["!" + path.join(config.app.src, "**/*.spec.js")]);
+    return gulp.src(files)
         .pipe(replace('@@MOTECH_SERVER_URL', config.motechServerUrl))
         .pipe(sourcemaps.init())
           .pipe(concat('motech.js'))

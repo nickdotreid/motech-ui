@@ -76,6 +76,9 @@
         "./build/angular-ui.css"
       ]
     },
+    "angular-mocks": {
+      "main": ""
+    },
     "font-awesome": {
       "main": "./css/font-awesome.css"
     },
