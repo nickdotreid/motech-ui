@@ -8,21 +8,16 @@
 
 </head>
 <body ng-app="motech-dashboard">
-    <header class="app-header">
-        <a href="/" class="logo">MOTECH</a>
-        <p class="description">Mobile technology for community health</p>
-        <div class="navbar">
-            <button class="navigation icon app-nav-button">Show navigation</button>
-            <nav class="collapsible" ng-include="'/common/nav-main.html'"></nav>
-        </div>
-    </header>
     <div class="app">
         <nav class="app-nav">
             <div class="container" ng-include="'/common/nav-secondary.html'"></div>
         </nav>
         <div class="app-main">
             <div ncy-breadcrumb></div>
-            <div ui-view="secondaryNav" class="secondary-nav navbar"></div>
+            <div class="secondary-nav navbar">
+                <button class="navigation icon app-nav-button">Show navigation</button>
+                <div ui-view="secondaryNav"></div>
+            </div>
             <div ui-view="appArea" class="app-area container"></div>
         </div>
     </div>
