@@ -1,17 +1,20 @@
 
 .app>nav{
+    border-right: $gray-light 1px solid;
     #{$navItemSelectors} {
         float:none;
         padding: 1em;
+        margin-right: -1px;
     }
 
     a.is-active,
     li.is-active a,
     a.active,
     li.active a {
-        background-color: $brand-accent;
+        background-color: $white;
         color: $brand-primary;
-
+        border: $gray-light 1px solid;
+        border-right: transparent;
     }
 
     .nav-section {

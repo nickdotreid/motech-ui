@@ -8,9 +8,12 @@
 </head>
 <body motech-app-state ng-class="{'is-ready':appReady}">
     <header role="banner" class="app-header">
-        <a href="/" class="logo">MOTECH</a>
         <div class="navbar">
-            <nav class="collapsible" ng-include="'/common/nav-main.html'"></nav>
+            <div>
+                <button class="navigation icon app-nav-button">Show navigation</button>
+                <a href="/" class="logo">MOTECH</a>
+                <nav class="collapsible" ng-include="'/common/nav-main.html'"></nav>
+            </div>
             <nav motech-auth motech-i18n class="motech-auth-menu" >
                 <a class="icon-user">{{userName}}</a>
                 <button ng-click="changeLanguage()" class="icon-language">{{language.name}}</button>
@@ -22,7 +25,6 @@
         <header>
             <div ncy-breadcrumb></div>
             <div class="secondary-nav navbar">
-                <button class="navigation icon app-nav-button">Show navigation</button>
                 <div ui-view="secondaryNav"></div>
             </div>
         </header>

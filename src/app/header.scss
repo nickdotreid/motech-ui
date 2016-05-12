@@ -1,21 +1,23 @@
 .app-header {
     @extend .clearfix;
     position: relative;
+    height: 50px;
     &:after{
-        height: 50px;
+        height: 100%;
         width: 100%;
         background-color: $brand-primary;
         position: absolute;
-        top: 50px;
+        top: 0px;
         left: 0px;
         z-index: -1;
     }
     .logo {
         display: block;
+        float: left;
         overflow: hidden;
         width: 160px;
         height: 50px;
-        margin: 0px 1em;
+        margin: 0px;
         background-size: 160px;
         background-repeat: no-repeat;
         background-position: top left;
@@ -82,23 +84,4 @@
             }
         }    
     }
-}
-
-@media (min-width: $screen-sm) {
-    .app-header .logo{
-        width: $container-sm;
-    }
-
-}
-@media (min-width: $screen-md) {
-    .app-header .logo{
-        width: $container-md;
-    }
-
-}
-@media (min-width: $screen-lg) {
-    .app-header .logo{
-        width: $container-lg;
-    }
-
 }
