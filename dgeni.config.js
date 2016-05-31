@@ -1,4 +1,5 @@
 var path = require('canonical-path');
+var config = require('./gulpfile.js/config');
 var Package = require('dgeni').Package;
 
 module.exports = new Package('dgeni-example', [
@@ -13,8 +14,8 @@ module.exports = new Package('dgeni-example', [
   readFilesProcessor.basePath = process.cwd();
   readFilesProcessor.sourceFiles = [
     {
-      include: 'src/**/*.js',
-      exclude: 'src/**/*.spec.js',
+      include: path.resolve(config.docs.src, '**/*.js'),
+      exclude: path.resolve(config.docs.src, '**/*.spec.js'),
       basePath: 'src'
     }
   ];
@@ -22,5 +23,5 @@ module.exports = new Package('dgeni-example', [
   templateFinder.templateFolders.unshift(path.resolve(process.cwd(), 'docs', 'templates'));
   templateFinder.templatePatterns.unshift('common.template.html');
 
-  writeFilesProcessor.outputFolder  = 'build/docs';
+  writeFilesProcessor.outputFolder  = config.docs.dest;
 });

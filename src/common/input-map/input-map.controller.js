@@ -2,7 +2,6 @@
 	'use strict';
 
 /**
- * 
  * @name InputController
  * @description Adds functionality and state to the input controller.
  *

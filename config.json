@@ -7,6 +7,10 @@
     "src": "./src",
     "dest": "./build/app"
   },
+  "docs": {
+    "src": "./src",
+    "dest": "./build/docs"
+  },
   "styleguide": {
     "src": "./src",
     "dest": "./build/styleguide"
