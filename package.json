@@ -45,7 +45,6 @@
     "postcss": "^5.0.19",
     "postcss-flexibility": "^1.0.3",
     "require-dir": "~0.3.0",
-    "sc5-styleguide": "^0.3.41",
     "yargs": "~3.31.0"
   },
   "devDependencies": {

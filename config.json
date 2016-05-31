@@ -11,10 +11,6 @@
     "src": "./src",
     "dest": "./build/docs"
   },
-  "styleguide": {
-    "src": "./src",
-    "dest": "./build/styleguide"
-  },
   "motechServerURL": "http://localhost:8080/motech/",
   "staticPath": "/",
   "styleguidePath": "/styleguide"
