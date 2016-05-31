@@ -23,7 +23,6 @@
 
 @mixin form-wide() {
     .form-group {
-        @extend .clearfix;
         display: flex;
         flex-flow: row;
         > *,
