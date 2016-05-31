@@ -1,6 +1,10 @@
 (function(){
 	'use strict';
 
+/**
+ * @description This controller creates an input controller.
+ */
+
 	angular.module('motech-common')
 		.controller('InputMapController', inputMapController);
 
