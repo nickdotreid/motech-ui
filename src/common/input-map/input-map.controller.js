@@ -2,7 +2,10 @@
 	'use strict';
 
 /**
- * @description This controller creates an input controller.
+ * 
+ * @name InputController
+ * @description Adds functionality and state to the input controller.
+ *
  */
 
 	angular.module('motech-common')

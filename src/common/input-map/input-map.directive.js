@@ -1,6 +1,16 @@
 (function(){
-
     'use strict';
+
+/**
+ * @ngdoc directive
+ * @restrict EA
+ * @name InputMapDirective
+ * @description Creates an interactive input map field.
+ *
+ * This is supposed to be used to create input maps
+ * <input-map></input-map>
+ *
+ */
 
     angular.module('motech-common')
         .directive('inputMap', mapInputDirective);
