@@ -5,7 +5,7 @@
             <button class="button-add" ui-sref="scheduler.createOrUpdateJob({ action: 'new' })" type="button">{{'scheduler.scheduleJob' | translate}}</button>
         </div>
         <div class="button-group">
-            <button class="button-filter" type="button" uib-btn-checkbox ng-model="viewFilters" ng-click="showFilters()">{{'scheduler.filters' | translate}}</button>
+            <button class="motech-sidebar-button">{{'scheduler.filters' | translate}}</button>
         </div>
     </motech-list-header>
     <motech-list-item ng-repeat="job in jobs.rows">
@@ -51,7 +51,7 @@
         <uib-pagination total-items="totalItems" ng-model="currentPage" ng-change="changePageTo(currentPage)"></uib-pagination>
     </motech-list-footer>
 </motech-list>
-<motech-sidebar ng-if="viewFilters" title="{{ 'scheduler.filters' | translate }}">
+<motech-sidebar title="{{ 'scheduler.filters' | translate }}">
     <form>
         <fieldset>
             <legend>{{ 'scheduler.name' | translate }}</legend>
