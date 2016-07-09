@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     background-color: $brand-accent;
-    padding: $space-size;
+    padding: $space-size/2 $space-size;
     >ul{
         @extend .list-unstyled;
         margin: 0em;
@@ -31,6 +31,7 @@
     }
     >header, >footer{
         @extend .clearfix;
+        padding-bottom: $space-size/2;
         .pagination{
             @extend .button-group-primary;
         }
