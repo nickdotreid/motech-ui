@@ -146,6 +146,17 @@ body.is-ready{
     }
 }
 
+.app>article>section{
+    background-color: $brand-accent;
+    padding: $space-size/2 $space-size;
+    >header{
+        padding-bottom:$space-size/2;
+    }
+    >footer{
+        padding-top: $space-size/2;
+    }
+}
+
 
 
 body>footer {

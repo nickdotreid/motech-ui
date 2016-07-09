@@ -32,9 +32,6 @@
     >header, >footer{
         @extend .clearfix;
         padding-bottom: $space-size/2;
-        .pagination{
-            @extend .button-group-primary;
-        }
     }
 }
 

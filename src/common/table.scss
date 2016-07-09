@@ -1,0 +1,19 @@
+table{
+	width: 100%;
+	>thead>tr{
+		background-color: $brand-accent;
+        @include background(linear-gradient(to bottom, $white 0%, $brand-accent 70%) center no-repeat);
+        font-weight: bold;
+        color: $brand-primary;
+	}
+	tr{
+		background-color: $white;
+		&:nth-child(even){
+            background-color:$gray-lighter;
+        }
+	}
+	td, th{
+		border: $brand-accent 1px solid;
+		padding: $space-size/2;
+	}
+}

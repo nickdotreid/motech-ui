@@ -20,15 +20,6 @@
             border: 0px;
             padding: 0px;
         }
-        .motech-list-column-headers{
-            background-color: $brand-accent;
-            @include background(linear-gradient(to bottom, $brand-accent 0%, $list-color 100%) center no-repeat);
-            font-weight: bold;
-            color: $brand-primary;
-            >li{
-                text-align: center;
-            }
-        }
         .motech-list-rows>li:nth-child(even){
             background-color:$gray-lighter;
         }

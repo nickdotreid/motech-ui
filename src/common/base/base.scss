@@ -50,3 +50,11 @@ h3, h4{
     position: relative;
     padding: 0em 1em;
 }
+
+header, footer{
+  @extend .clearfix;
+}
+
+.pagination{
+    @extend .button-group-primary;
+}
