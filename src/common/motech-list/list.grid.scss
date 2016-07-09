@@ -25,11 +25,10 @@
         }
     }
 
-    .motech-list .motech-list-rows>li,
-    .motech-list-column-headers{
+    .motech-list .motech-list-rows>li{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin-bottom: $space-size;
         >*{
             display: inline-block;
@@ -58,26 +57,20 @@
                 font-size: 0.8em;
             }
         }
-        .motech-list-collapsible{
-            display: none;
-            width: 100%;
-        }
-    }
-    .motech-list.has-collapsible-content{
-        .motech-list-column-headers{
-            padding-left: 30px;
-        }
-        .motech-list-rows>li{
+        &.has-collapsible-content{
             position: relative;
-            padding-left: 30px;
-            >a.list-item-collapsible-toggle{
-                width: 30px;
-                height: 100%;
+            padding-left: $space-size*2;
+            .list-item-collapsible-toggle{
+                display: block;
                 position: absolute;
                 top: 0px;
                 left: 0px;
+                width: $space-size*2;
+                height: 100%;
             }
-
+            .motech-list-collapsible{
+                width: 100%;
+            }
         }
     }
 }

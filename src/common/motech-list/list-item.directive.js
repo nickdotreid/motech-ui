@@ -68,6 +68,10 @@
         } else {
             element.parents('.motech-list:first').addClass('has-main-content');
         }
+
+        if(jQuery('.motech-list-collapsible', element).length > 0){
+            element.addClass('has-collapsible-content');
+        }
     }
     
     /**
