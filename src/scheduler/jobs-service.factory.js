@@ -15,8 +15,6 @@
                 page: "1",
                 sortColumn: "name",
                 sortDirection: "asc",
-                activity: "NOTSTARTED,ACTIVE,FINISHED",
-                status: "ERROR,BLOCKED,PAUSED,OK",
                 timeFrom: "",
                 timeTo: ""
             },
