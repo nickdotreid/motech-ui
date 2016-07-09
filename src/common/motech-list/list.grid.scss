@@ -3,19 +3,8 @@
     .motech-list{
         border-bottom: 0px;
         margin-bottom: $space-size;
-        .motech-list-column-headers,
-        .motech-list-rows{
-            border-left: $list-color 1px solid;
-            border-right: $list-color 1px solid;
-        }
-        >header,
-        .motech-list-rows>li,
-        .motech-list-column-headers {
-            border-bottom: $list-color 1px solid;
-        }
         .motech-list-rows>li>*,
-        .motech-list-rows>li>dl>dd,
-        .motech-list-column-headers>*{
+        .motech-list-rows>li>dl>dd{
             padding: $space-size/2;
             border-left: $list-color 1px solid;
             &.list-item-main,
@@ -47,18 +36,35 @@
 
     .motech-list .motech-list-rows>li,
     .motech-list-column-headers{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: $space-size;
         >*{
             display: inline-block;
             white-space: nowrap;
+            flex: 0 0 auto;
+            padding-top: $space-size;
+        }
+        .list-item-main{
+            flex: 1 0 auto;
         }
         >dl{
+            display: flex;
             margin-bottom: 0px;
+            position: relative;
+            >*{
+                flex: 0 0 auto;
+            }
             >dd{
                 display: inline-block;
+                padding-top: $space-size;
             }
             >dt{
-                display: none;
+                position: absolute;
+                top: 0px;
+                padding: $space-size/4 $space-size/2;
+                font-size: 0.8em;
             }
         }
         .motech-list-collapsible{
